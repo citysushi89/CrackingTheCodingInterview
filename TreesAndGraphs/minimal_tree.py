@@ -43,7 +43,7 @@ def insert(node, value):
         node.right.parent = node
     return node
 
-def create_balance_bi__search_tree(sorted_arr):
+def create_balance_bi_search_tree(sorted_arr):
     arr_len = len(sorted_arr)
     root = sorted_arr[arr_len // 2]
     tree = insert(None, root)
@@ -54,5 +54,5 @@ def create_balance_bi__search_tree(sorted_arr):
     return display_keys(tree)
 
 
-binary_tree_1 = create_balance_bi__search_tree(SORTED_ARRAY)
-binary_tree_2 = create_balance_bi__search_tree(SORTED_ARRAY2)
+binary_tree_1 = create_balance_bi_search_tree(SORTED_ARRAY)
+binary_tree_2 = create_balance_bi_search_tree(SORTED_ARRAY2)
