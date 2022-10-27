@@ -1,0 +1,8 @@
+
+Describe how you could use a single array to implement three stacks
+
+You could use the start and end as two stacks, with operations such as append, insert, delete, and pop
+
+You could use the midddle of the array as a third stack, although this begins to get squirrly as the array len decreases and 
+I am not sure what would happen if an array with an even amount of elements were accessed for the middle element, this would need 
+to be accounted for
