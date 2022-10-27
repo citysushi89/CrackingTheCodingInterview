@@ -1,9 +1,8 @@
 """
-Given a sorted (increasing order) array with unique integer elements, write an algorithm to create a binary search tree with minimal height
+From Jovian: https://jovian.ai/learn/data-structures-and-algorithms-in-python/lesson/lesson-2-binary-search-trees-traversals-and-balancing/your-notebooks#C147
+Can also include a key in the node, but did not intially 
 """
 
-SORTED_ARRAY = [1, 2, 3, 4, 5, 6]
-SORTED_ARRAY2 = [1, 2, 3, 4, 5, 6, 7]
 
 class Node:
     def __init__(self, value, left=None, right=None, parent=None):
@@ -32,9 +31,6 @@ def display_keys(node, space='\t', level=0):
 def insert(node, value):
     if node is None:
         node = Node(value)
-    elif node.right is None:
-        node.right = insert(node.right, value)
-        node.right.parent = node
     elif value < node.value:
         node.left = insert(node.left, value)
         node.left.parent = node
@@ -42,17 +38,3 @@ def insert(node, value):
         node.right = insert(node.right, value)
         node.right.parent = node
     return node
-
-def create_balance_bi__search_tree(sorted_arr):
-    arr_len = len(sorted_arr)
-    root = sorted_arr[arr_len // 2]
-    tree = insert(None, root)
-    reversed_list = sorted_arr[::-1]
-    for item in reversed_list:
-        if item != root:
-            insert(tree, item)
-    return display_keys(tree)
-
-
-binary_tree_1 = create_balance_bi__search_tree(SORTED_ARRAY)
-binary_tree_2 = create_balance_bi__search_tree(SORTED_ARRAY2)
