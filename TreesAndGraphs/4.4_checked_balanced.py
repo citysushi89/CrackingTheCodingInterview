@@ -3,6 +3,7 @@ If no exception is thrown
 Implement a function to check if a binary tree is balanced
 (For the purposes of this question, a balanced tree is defined to be a tree such that
 the heights of the two subtrees of any node never differ by more than one)
+NOTE: currently throws an exception when the tree is not balanced
 """
 from StructureTemplates.Trees.binary_search_tree import display_keys
 
@@ -34,8 +35,7 @@ def tree_height(node):
     return 1 + max(tree_height(node.left), tree_height(node.right))
 
 
-def pre_order_traversal(node, level,previous_height):
-    # while is_balanced != False:
+def pre_order_traversal(node, level, previous_height):
     if node is None:
         level -= 1
         return []
