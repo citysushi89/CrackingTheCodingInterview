@@ -1,6 +1,5 @@
 """
 Given a Binary Tree, design an algorithm which creates a linked list of all the nodes at each depth
-TODO IN PROGRESS
 """
 
 # Create linked list

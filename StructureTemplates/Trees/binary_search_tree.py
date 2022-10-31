@@ -2,6 +2,9 @@
 From Jovian: https://jovian.ai/learn/data-structures-and-algorithms-in-python/lesson/lesson-2-binary-search-trees-traversals-and-balancing/your-notebooks#C147
 Can also include a key in the node, but did not intially 
 """
+import os
+
+print(os.getcwd())
 
 class Node:
     def __init__(self, value, left=None, right=None, parent=None):
@@ -50,4 +53,4 @@ tree1 = insert(None, 0)
 ARRAY = [1, 2, 3, 4, 5, 6]
 for item in ARRAY:
     insert(tree1, item)
-display_keys(tree1)
+# display_keys(tree1)
