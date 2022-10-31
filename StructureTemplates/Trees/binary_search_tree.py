@@ -3,7 +3,6 @@ From Jovian: https://jovian.ai/learn/data-structures-and-algorithms-in-python/le
 Can also include a key in the node, but did not intially 
 """
 
-
 class Node:
     def __init__(self, value, left=None, right=None, parent=None):
         self.value = value
@@ -38,3 +37,17 @@ def insert(node, value):
         node.right = insert(node.right, value)
         node.right.parent = node
     return node
+
+def tree_height(node):
+    if node is None: 
+        return 0
+    return 1 + max(tree_height(node.left), tree_height(node.right))
+
+
+
+# TO start a BST
+tree1 = insert(None, 0)
+ARRAY = [1, 2, 3, 4, 5, 6]
+for item in ARRAY:
+    insert(tree1, item)
+display_keys(tree1)
