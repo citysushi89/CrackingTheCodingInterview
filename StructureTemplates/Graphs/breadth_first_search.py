@@ -3,6 +3,7 @@ breadth_first_search.py contains a func bfs which performs a binary search
 can be used with graph.py
 """
 
+
 # Simple bfs
 def bfs(graph, source):
     visited = [False] * len(graph.data)
@@ -15,6 +16,7 @@ def bfs(graph, source):
     while i < len(queue):
         for v in graph.data[queue[i]]:
             if not visited[v]:
+                print(queue)
                 visited[v] = True
                 queue.append(v)
         i += 1
@@ -23,7 +25,7 @@ def bfs(graph, source):
 
 
 # bfs with weights, distances, parents
-def bfs(graph, root):
+def bfs_w_weights(graph, root):
     queue = []
     discovered = [False] * len(graph.data)
     distance = [None] * len(graph.data)

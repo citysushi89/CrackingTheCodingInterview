@@ -3,6 +3,7 @@ filled in with graph from Jovian
 https://hub.binder.jovian.ai/user/owenpickard89/api-git-de03faa-109fb84a9d886_1-rwyahgw2/notebooks/python-graph-algorithms.ipynb
 """
 
+
 class Graph:
     def __init__(self, num_nodes, edges):
         self.num_nodes = num_nodes
@@ -31,4 +32,9 @@ class Graph:
         second_edge = edge_to_rm[0][1]
         self.data[first_edge].remove(second_edge)
         self.data[second_edge].remove(first_edge)
-        
+
+# Making a graph
+num_nodes5 = 9
+edges5 = [(0, 1), (0, 3), (0, 8), (1, 7), (2, 7), (2, 3),
+          (2, 5), (3, 4), (4, 8), (5, 6)]
+graph5 = Graph(num_nodes5, edges5)

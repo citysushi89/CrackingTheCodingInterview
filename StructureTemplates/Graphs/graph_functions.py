@@ -1,5 +1,4 @@
 
-
 # IMPORTANT
 def shortest_path(graph, source, target):
     visited = [False] * len(graph.data)

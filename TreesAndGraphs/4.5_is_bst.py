@@ -4,6 +4,7 @@ NOTE: currently throws an except if the passed-in tree is not a bst, Returns tru
 """
 from StructureTemplates.Trees.binary_search_tree import display_keys
 
+
 class Node:
     def __init__(self, value, left=None, right=None, parent=None):
         self.value = value
