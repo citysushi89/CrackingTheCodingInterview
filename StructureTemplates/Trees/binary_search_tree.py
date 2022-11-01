@@ -53,3 +53,4 @@ tree1 = insert(None, 10)
 ARRAY = [8, 12, 9, 7, 13, 11]
 for item in ARRAY:
     insert(tree1, item)
+
