@@ -16,7 +16,6 @@ def bfs(graph, source):
     while i < len(queue):
         for v in graph.data[queue[i]]:
             if not visited[v]:
-                print(queue)
                 visited[v] = True
                 queue.append(v)
         i += 1
