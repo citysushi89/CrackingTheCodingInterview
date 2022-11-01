@@ -49,7 +49,7 @@ def tree_height(node):
 
 
 # TO start a BST
-tree1 = insert(None, 0)
-ARRAY = [1, 2, 3, 4, 5, 6]
+tree1 = insert(None, 10)
+ARRAY = [8, 12, 9, 7, 13, 11]
 for item in ARRAY:
     insert(tree1, item)
