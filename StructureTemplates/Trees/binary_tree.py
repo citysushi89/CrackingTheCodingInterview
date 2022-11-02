@@ -29,7 +29,7 @@ def display_keys(node, space='\t', level=0):
     print(space*level + str(node.value))
     display_keys(node.left, space, level + 1)
 
-
+# BST Insertion
 def insert(node, value):
     if node is None:
         node = Node(value)
@@ -41,6 +41,16 @@ def insert(node, value):
         node.right.parent = node
     return node
 
+# Insert to keep binary tree balanced, not to create a bst
+def insert_not_bst(node, value):
+    if node is None:
+        node = Node(value)
+    elif tree_height(node.left) < tree_height(node.right):
+        node.left = insert_not_bst(node.left, value)
+        node.left.parent = node
+    else:
+        node.right = insert_not_bst(node.right, value)
+        node.right.parent = node
 
 def tree_height(node):
     if node is None: 

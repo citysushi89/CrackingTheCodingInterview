@@ -4,7 +4,6 @@ allows for weighed and directed graphs
 https://hub.binder.jovian.ai/user/owenpickard89/api-git-de03faa-109fb84a9d886_1-rwyahgw2/notebooks/python-graph-algorithms.ipynb
 """
 
-
 class Graph:
     def __init__(self, num_nodes, edges, directed=False, weighted=False):
         self.num_nodes = num_nodes

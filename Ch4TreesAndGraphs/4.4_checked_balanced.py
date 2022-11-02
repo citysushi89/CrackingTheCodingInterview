@@ -5,7 +5,7 @@ Implement a function to check if a binary tree is balanced
 the heights of the two subtrees of any node never differ by more than one)
 NOTE: currently throws an exception when the tree is not balanced
 """
-from StructureTemplates.Trees.binary_search_tree import display_keys
+from StructureTemplates.Trees.binary_tree import display_keys
 
 
 class Node:

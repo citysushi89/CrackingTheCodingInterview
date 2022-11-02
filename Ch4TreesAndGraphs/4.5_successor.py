@@ -2,11 +2,11 @@
 Finds the 'next' node (in-order successor) of a given node in a binary search tree.
 Assuming there are links to its parent
 Program currently only prints the successor to the console, issues returning in a recursive function
+# IN PROGRESS (not complete)
 """
-from StructureTemplates.Trees.binary_search_tree import display_keys
+
 
 global needed_node, parent_node
-
 
 class Node:
     def __init__(self, value, left=None, right=None, parent=None):
@@ -44,11 +44,9 @@ def pre_order_traversal_modified(node, input_node_value):
     pre_order_traversal_modified(node.left, input_node_value)
     pre_order_traversal_modified(node.right, input_node_value)
 
-
 def find_successor(input_tree, input_node_value):
     # Iterate through the nodes until the requested Node is found
     return pre_order_traversal_modified(input_tree, input_node_value)
-
 
 
 # Setup the Tree

@@ -61,7 +61,6 @@ def print_possible_arrays(head_node, height):
         new_array2.append(current_node.left.value) 
         if h != 1:
             length_of_array_to_start = len(possible_arrays) - 1
-
             for i in range(length_of_array_to_start + 1):
 
                 # make a copy of the list append to the end  each iteration 
@@ -73,7 +72,6 @@ def print_possible_arrays(head_node, height):
                 
                 for e in new_array2:
                     possible_arrays[i + length_of_array_to_start].append(e)
-
 
         else:
             possible_arrays.append(new_array1)

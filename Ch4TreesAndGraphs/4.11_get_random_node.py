@@ -1,7 +1,6 @@
 """
 Implement a BST with functions: insert, find, delete, and get random, which return a random node
 """
-import math
 import random
 
 class Node:

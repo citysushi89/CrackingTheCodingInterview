@@ -19,7 +19,6 @@ def shortest_path(graph, source, target):
         if next_node:
             queue.append(next_node)
 
-        
     return distance[target], parent
 
 def update_distances(graph, current, distance, parent=None):

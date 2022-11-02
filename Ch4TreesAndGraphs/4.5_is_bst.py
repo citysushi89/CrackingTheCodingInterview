@@ -2,7 +2,7 @@
 Implement a function to check if a tree is a binary search tree
 NOTE: currently throws an except if the passed-in tree is not a bst, Returns true if it is a bst
 """
-from StructureTemplates.Trees.binary_search_tree import display_keys
+from StructureTemplates.Trees.binary_tree import display_keys
 
 
 class Node:
