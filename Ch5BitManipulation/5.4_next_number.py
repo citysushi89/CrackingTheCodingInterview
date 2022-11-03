@@ -10,7 +10,6 @@ def make_bit(num):
 
 def get_ones(bit_num):
     number_of_ones = 0
-
     for item in bit_num:
         if item == '1':
             number_of_ones += 1
@@ -39,8 +38,6 @@ while True:
         break
     smaller_num -= 1
 
-
 print(f"The input number is {input_num}. The larger number with the"
     f"same number of ones in its binary representation is "
     f"{output_num_large} and the smaller is {output_num_small}.")
-
